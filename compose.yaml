@@ -3,7 +3,7 @@ services:
   elk:
     image: sebp/elk
     volumes:
-      - ./logs:/logs 
+      - ./logs:/logs:cached,noatime 
       - ./iis.conf:/etc/logstash/conf.d/iis.conf
     ports: 
       - 5601:5601
