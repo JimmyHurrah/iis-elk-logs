@@ -1,6 +1,7 @@
 ### A "good enough" setup for analysing local iis log files
 
-Put logs in ./logs as *.log
+- Put logs in ./logs as *.log
+- Adjust grok pattern in iis.conf
 
 ```cli
 > docker compose up
